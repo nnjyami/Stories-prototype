@@ -59,8 +59,8 @@
     #page3 .vt {
       padding: 2em 0;
     }
-    #page3 amp-img {
-      height: auto;
+    #page3 amp-img img {
+      height: auto!important;
     }
     #page4 p {
       text-align: center;
@@ -75,6 +75,17 @@
       display: inline-block;
       border-bottom: 1px solid rgba(255,255,255,.8);
       width: 50%;
+    }
+    #page6 p {
+      line-height: 2;
+      font-size: 0.8rem;
+      font-feature-settings: "palt";
+      letter-spacing: 0.08em;
+      text-align: justify;
+      margin-bottom: 1em;
+    }
+    #page6 span.f {
+      font-size: 1.2rem;
     }
   </style>
 </head>
@@ -126,7 +137,7 @@
     </amp-story-grid-layer>
     <amp-story-grid-layer template="thirds">
         <div grid-area="upper-third" class="align-right">
-        <p class="vt">FLOWER は一回 500円でかわいいブーケが届くサービス。二週間に一回、二種類のブーケから好みの方を選ぶと、ポストにお花が届く。<br>ブーケとして格別安いわけではない。でも、退会しない限りは半自動的に、花が届き、飾れるのはとてもいい体験。</p>
+        <p class="vt">FLOWER は一回 500円でかわいいブーケが届くサービス。<br>二週間に一回、二種類のブーケから好みの方を選ぶと、ポストにお花が届く。<br>ブーケとして格別安いわけではない。でも、退会しない限りは半自動的に、花が届き、飾れるのはとてもいい体験。</p>
         </div>
   </amp-story-grid-layer>
   </amp-story-page>
@@ -184,8 +195,10 @@
   </amp-story-grid-layer>
   <amp-story-grid-layer template="thirds">
     <h1 class="f" grid-area="upper-third">FLOWER</h1>
-    <p grid-area="lower-third">FLOWER は一回 500円でかわいいブーケが届くサービス。下記、招待コードを入れていただくと、ブーケプランが一回無料になるチケットがもらえます。</p>
-    <p>招待コード: <span class=""f>8FDA</span></p>
+    <div grid-area="lower-third">
+    <p>FLOWER は一回 500円でかわいいブーケが届くサービス。下記、招待コードを入れていただくと、ブーケプランが一回無料になるチケットがもらえます。</p>
+    <p>招待コード: <span class="f">8FDA</span></p>
+    </div>
 </amp-story-grid-layer>
 </amp-story-page>
 
